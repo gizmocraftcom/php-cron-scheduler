@@ -1,5 +1,5 @@
 {
-    "name": "kykint/php-cron-scheduler",
+    "name": "gizmocraft/php-cron-scheduler",
     "description": "PHP Cron Job Scheduler fork with support php 8.4",
     "license": "MIT",
     "keywords": ["cron job", "scheduler"],
