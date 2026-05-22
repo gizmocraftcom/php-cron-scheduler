@@ -264,7 +264,7 @@ class Scheduler
         if (is_callable($compiled)) {
             $reflectionClosure = new \ReflectionFunction($compiled);
 
-            $compiled = 'Closure ' . $reflectionClosure->getClosureScopeClass()->getName();
+            $compiled = 'Closure ' . ($reflectionClosure->getClosureScopeClass()?->getName() ?? 'unnamed');
         }
 
         $this->addSchedulerVerboseOutput("{$e->getMessage()}: {$compiled}");
